@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*Identité graphique*/
-.title-typography, body {
+/*extensions*/
+.title-typography, #menu-card .menu-card__top .menu-card__title, body {
   font-family: "Shrikhand", cursive;
   color: black;
 }
@@ -18,6 +19,29 @@ input:-ms-input-placeholder {
 .text-typography, input::placeholder, body {
   font-family: "Roboto", sans-serif;
   color: black;
+}
+
+.border-title__meal, .entrance .meal__title::after, .dish .meal__title::after, .dessert .meal__title::after {
+  content: "_";
+  border-bottom: solid 3px #99E2D0;
+  display: block;
+  width: 40px;
+  color: transparent;
+  margin-top: -15px;
+}
+
+.button-omf, .button--purple__meal, .text-button .button--purple {
+  width: 60%;
+  padding: 15px 5px 15px 5px;
+  font-size: 16px;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100px;
+  border: none;
+  color: white;
+  background-image: linear-gradient(to right bottom, #FF79DA, #9356DC);
+  box-shadow: 1px 2px 10px grey;
 }
 
 /*body*/
@@ -109,20 +133,6 @@ input:focus {
   font-size: 18px;
   font-weight: lighter;
 }
-.text-button .button--purple {
-  width: 60%;
-  padding: 15px 5px 15px 5px;
-  font-size: 16px;
-  align-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 100px;
-  border: none;
-  color: white;
-  background-image: linear-gradient(to right bottom, #FF79DA, #9356DC);
-  box-shadow: 1px 2px 10px grey;
-}
-
 /*fonctionnement*/
 #function {
   margin-left: 10px;
@@ -228,7 +238,6 @@ footer .footer__title {
 }
 footer ul {
   list-style-type: none;
-  pagging: 0;
 }
 footer ul li {
   margin-left: -5%;
@@ -240,4 +249,98 @@ footer ul li {
 footer ul li .fa-solid {
   font-size: 13px;
   margin-right: 8px;
+}
+
+/*menu */
+header {
+  display: flex;
+  align-items: center;
+  margin: 10px 80px 0px 20px;
+}
+header a {
+  color: black;
+  margin: 30px -40px 10px 0px;
+}
+header .fa-arrow-left {
+  font-size: 20px;
+}
+
+/* haut de la carte menu*/
+#menu-card {
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+}
+#menu-card .menu-card__image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: -10px;
+}
+#menu-card .menu-card__top {
+  padding-top: 25px;
+  margin-top: -30px;
+  background-color: #F6F6F6;
+  border-radius: 40px;
+}
+#menu-card .menu-card__top .menu-card__title {
+  font-size: 28px;
+  font-weight: 400;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+#menu-card .menu-card__top .fa-regular {
+  margin-left: 6%;
+}
+
+/*entrées*/
+.entrance, .dish, .dessert {
+  margin: 0px 10px 20px 8px;
+}
+.entrance .meal__title, .dish .meal__title, .dessert .meal__title {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 15px;
+  margin-left: 2px;
+}
+.entrance .card-meal, .dish .card-meal, .dessert .card-meal {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  height: 70px;
+  width: 100%;
+  border-radius: 15px;
+}
+.entrance .card-meal .card-meal__name, .dish .card-meal .card-meal__name, .dessert .card-meal .card-meal__name {
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: -10px;
+  margin-left: 10px;
+  margin-top: 15px;
+  width: 260px;
+  height: 20px;
+  white-space: nowrap;
+}
+.entrance .card-meal .card-meal__desc, .dish .card-meal .card-meal__desc, .dessert .card-meal .card-meal__desc {
+  margin-left: 10px;
+  width: 270px;
+  height: 20px;
+  font-size: 14px;
+  font-weight: 100;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.entrance .card-meal .card-meal__price, .dish .card-meal .card-meal__price, .dessert .card-meal .card-meal__price {
+  margin: -35px 80px 50px 295px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.button--purple__meal {
+  display: block;
+  width: 190px;
+  margin-top: 45px;
+  margin-bottom: 40px;
 }/*# sourceMappingURL=Styles.css.map */

@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
     <meta charset ="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="CSS/Styles.css">
     <link rel="stylesheet" type="text/css" href="CSS/Normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css" integrity="sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;500&family=Shrikhand&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+        @import url('https://fonts.googleapis.com/css2? family=Roboto:wght@100;300;400;500;700;900&display=swap');
     </style> 
     <title>Menu - La palette du goût</title>
     <body>
@@ -20,65 +19,82 @@
             <section id="menu-card"><!--haut de la carte menu-->
                 <img class="menu-card__image" src="images/menu_1.jpg" alt="La palette du goût">
                     <div class="menu-card__top">
-                        <h1 class="menu-card__title">La palette du goût</h1>
-                            <i class="fa-thin fa-heart"></i>
+                        <h1 class="menu-card__title">La palette du goût<i class="fa-regular fa-heart"></i></h1>
                     </div>
                     <div class="entrance"><!--les entrées-->
                         <h2 class="meal__title">entrées</h2>
                             <div class="card-meal">
                                 <h3 class="card-meal__name">Fricassée d'escargot</h3>
-                                    <p class="card-meal__desc">Au piment d'espelette</p>
-                                        <p class="card-meal__price">25€</p>
+                                    <div class="overflow-text__meal">
+                                        <p class="card-meal__desc">Au piment d'espelette</p>
+                                            <p class="card-meal__price">25€</p>
+                                    </div>
                             </div>
                             <div class="card-meal">
                                 <h3 class="card-meal__name">Foie gras de canard mi-cuit</h3>
-                                    <p class="card-meal__desc">Et ses copeaux de truffe noire</p>
-                                        <p class="card-meal__price">35€</p>
+                                    <div class="overflow-text__meal">
+                                        <p class="card-meal__desc">Et ses copeaux de truffe noire</p>
+                                            <p class="card-meal__price">35€</p>
+                                    </div>
                             </div>
                             <div class="card-meal">
                                 <h3 class="card-meal__name">Oeuf au plat</h3>
-                                    <p class="card-meal__desc">Assaisonné à la truffe sur lit de caviar</p>
-                                        <p class="card-meal__price">20€</p>
+                                    <div class="overflow-text__meal">
+                                        <p class="card-meal__desc">Assaisonné à la truffe sur lit de caviar</p>
+                                            <p class="card-meal__price">20€</p>
+                                    </div>
                             </div>
                     </div>
                     <div class="dish"><!--les plats-->
                         <h2 class="meal__title">plats</h2>
                             <div class="card-meal">
                                 <h3 class="card-meal__name">Filet de boeuf aux herbes</h3>
-                                    <p class="card-meal__desc">Accompagné de sa rimbambelle de légumes</p>
-                                        <p class="card-meal__price">40€</p>
+                                    <div class="overflow-text__meal">
+                                        <p class="card-meal__desc">Accompagné de sa rimbambelle de légumes</p>
+                                            <p class="card-meal__price">40€</p>
+                                    </div>
                             </div>
                             <div class="card-meal">
                                 <h3 class="card-meal__name">Parmentier de queue de boeuf</h3>
-                                    <p class="card-meal__desc">À la truffe noire sur sa purée de panais</p>
-                                        <p class="card-meal__price">35€</p>
+                                    <div class="overflow-text__meal">
+                                        <p class="card-meal__desc">À la truffe noire sur sa purée de panais</p>
+                                            <p class="card-meal__price">35€</p>
+                                    </div>
                             </div>
                             <div class="card-meal">
-                                <h3 class="card-meal__name">Filet de turbot</h3>
-                                    <p class="card-meal__desc">Aux agrumes</p>
-                                        <p class="card-meal__price">44€</p>
+                                <h3 class="card-meal__name">Filet de Turbot</h3>
+                                    <div class="overflow-text__meal">
+                                        <p class="card-meal__desc">Aux agrumes</p>
+                                            <p class="card-meal__price">44€</p>
+                                    </div>
                             </div>
                     </div>
                     <div class="dessert"><!--les desserts-->
                         <h2 class="meal__title">desserts</h2>
                             <div class="card-meal">
                                 <h3 class="card-meal__name">Paris-Brest</h3>
-                                    <p class="card-meal__desc">Revisité</p>
-                                        <p class="card-meal__price">18€</p>
+                                    <div class="overflow-text__meal">
+                                        <p class="card-meal__desc">Revisité</p>
+                                            <p class="card-meal__price">18€</p>
+                                    </div>
                             </div>
                             <div class="card-meal">
                                 <h3 class="card-meal__name">Macaron au chocolat d'exception</h3>
-                                    <p class="card-meal__desc">Et glace à la vanille de Madagascar</p>
-                                        <p class="card-meal__price">22€</p>
+                                    <div class="overflow-text__meal">
+                                        <p class="card-meal__desc">Et glace à la vanille de Madagascar</p>
+                                            <p class="card-meal__price">22€</p>
+                                    </div>
                             </div>
                             <div class="card-meal">
                                 <h3 class="card-meal__name">Mousse au chocolat</h3>
-                                    <p class="card-meal__desc">Au piment d'espelette et à la truffe noire</p>
-                                        <p class="card-meal__price">23€</p>
-                            </div>
+                                    <div class="overflow-text__meal">
+                                        <p class="card-meal__desc">Au piment d'espelette et à la truffe noire</p>
+                                            <p class="card-meal__price">23€</p>
+                                    </div>
+                            </div><!--bouton "commander"-->
+                            <button type="submit" class="button--purple__meal">Commander</button>
                     </div>
-            </section><!--bouton "commander"-->
-            <button class="button--purple">Commander</button>
+            </section>
         </main>
         <footer><!--footer-->
             <h4 class="footer__title">ohmyfood</h4>
