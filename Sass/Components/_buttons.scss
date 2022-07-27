@@ -1,0 +1,36 @@
+.button-omf
+{
+    width:220px;
+    padding:15px 5px 15px 5px;
+    font-size:16px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    border:none;
+    color:white;
+    background-image: linear-gradient(to right bottom,$color-secondary,$color-primary);
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
+  
+&:hover{
+        @include border-hover;
+    }
+&:active{
+        box-shadow: inset -1px -2px 10px rgba(255, 255, 255, .6),
+                    inset 1px 2px 10px rgba(0, 0, 0, .6);
+}
+}
+.button--purple__meal{
+    @extend .button-omf;
+    display: block;
+    width: 190px;
+    margin-top: 45px;
+    margin-bottom:40px;
+    
+}
+.commander{
+    @media (min-width:992px){
+        background-color: blue;
+        width: 750px;
+    }
+}

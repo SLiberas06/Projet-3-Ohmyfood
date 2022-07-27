@@ -1,0 +1,42 @@
+/*barre de recherche*/
+
+.location 
+{
+    text-align: center;
+    background-color: #EAEAEA;
+    width:100%;
+    margin:auto;
+    input
+    {
+        border:none;
+        text-align: left;
+        width:190px;
+        padding-top:15px;
+        margin-left:-5px;
+        padding-bottom:15px;
+        font-size: 18px;
+        background-color: transparent; 
+    }
+}
+
+input::placeholder
+{
+   color: black;
+   opacity:0.8;
+   font-weight:bolder;
+   @extend .text-typography;
+   font-weight: 400;
+}
+
+input:focus
+{
+    outline:none;
+}
+
+.fa-location-dot::before
+{
+  margin-right:10px;
+  margin-left:50px;
+  font-size:18px;
+  opacity:0.8;  
+}

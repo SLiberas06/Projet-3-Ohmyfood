@@ -1,0 +1,63 @@
+/*fonctionnement*/
+#function{
+    margin-left:10px;
+    margin-bottom: 80px;
+    @media (min-width:992px){
+        text-align: center;
+        margin-top:40px;
+    }
+    .function-card__container{
+        display:flex;
+        flex-direction: row;
+        margin:0px 10px 20px 7px;
+        text-align: center;
+        align-items: baseline;
+        border-radius: 20px;
+        box-shadow: 1px 2px 7px rgba(2, 2, 2, 0.2);
+        width:100%;
+        @media (min-width:768px){
+            width:45%;
+            margin-right:auto;
+            margin-left: auto;
+        }
+        @media (min-width:992px){
+            margin-top:30px;
+            width:450px;
+        }
+        .function-card--number{
+            background-color:$color-primary;
+            color:white;
+            padding:5px;
+            width:25px;
+            height:25px;
+            border-radius:50%;
+            text-align: center;
+            font-size:15px;
+            margin-left: -10px;
+        }
+        .fa-function{
+            width:25px;
+            height:25px;
+            margin:20px;
+            font-size:20px;
+            opacity:0.6;
+            
+        }
+        .function-card__title{
+            font-size:16px;
+            @media (min-width:992px){
+                text-align: center;
+                width: 60%;
+            }
+        }
+        &:hover {
+            background-color: lighten($color-primary,35%);
+            cursor: pointer;
+
+        & > .fa-function {
+            color: $color-primary;
+            opacity: 1;
+        }
+        }
+    }
+}

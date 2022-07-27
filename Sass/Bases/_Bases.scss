@@ -1,0 +1,14 @@
+/*body*/
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    @extend .text-typography;
+    @extend .title-typography;
+    overflow-x:hidden;
+    width: 100%;
+    margin: 0;
+}

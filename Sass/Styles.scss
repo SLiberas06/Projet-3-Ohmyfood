@@ -1,0 +1,28 @@
+@import "./Utils/_Variables";
+@import "./Utils/_Fonctions";
+@import "./Utils/_Mixins";
+@import "./Utils/_Placeholders";
+
+@import "./Bases/_Bases";
+@import "./Bases/_Animations";
+@import "./Bases/_Typography";
+
+@import "./Components/_border";
+@import "./Components/_buttons";
+
+@import "./Layout/header";
+@import "./Layout/location";
+@import "./Layout/text-top-main";
+@import "./Layout/function-id";
+@import "./Layout/restaurant-id";
+@import "./Layout/footer";
+
+@import "./Pages/header-menu";
+@import "./Pages/top-menu-card";
+@import "./Pages/card-menu";
+
+
+
+
+
+

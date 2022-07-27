@@ -1,0 +1,15 @@
+/*menu */
+header{
+    display:flex;
+    align-items: center;
+    padding-top:10px;
+    padding-bottom:5px;
+    a{
+        color:black;
+       margin-left:20px;
+       margin-right:-20px;
+    }
+    .fa-arrow-left{
+        font-size: 20px;
+    }
+}

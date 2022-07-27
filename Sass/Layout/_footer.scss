@@ -1,0 +1,38 @@
+footer{
+    background-color: #353535;
+    padding-top:15px;
+    padding-bottom: 10px;
+    @media (min-width:768px){
+        display: flex;
+        align-items: baseline;
+        height: 120px;
+    }
+    .footer__title{
+        font-family: 'Shrikhand',cursive;
+        margin-left:10px;
+        color: #F6F6F6;
+        font-size:20px;
+        font-weight: 200;
+        margin-top:2%;
+        margin-left:5%;
+        margin-bottom: 0;
+    }
+    ul{
+        list-style-type: none;
+        li{
+            margin-left: -5%;
+            margin-bottom: 3%;
+            font-size:15px;
+            font-weight: 500;
+            color:#F6F6F6;
+            @media (min-width:768px){
+                display:inline;
+                margin:5px;
+            }
+            .fa-solid{
+                font-size:13px;
+                margin-right: 8px;
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+/* haut de la carte menu*/
+#menu-card{
+    background-color:#F6F6F6;
+    display: flex;
+    flex-direction: column;
+    .menu-card__image{
+        width: 100%;
+        object-fit: cover;
+        margin-bottom:-10px;
+        @media (min-width:768px){
+            height:500px;
+        }
+    }
+    .menu-card__top{
+       padding-top: 25px;
+       margin-top:-30px;
+       background-color: #F6F6F6;
+       border-radius: 40px;
+        .menu-card__title{
+            @extend .title-typography;
+            font-size:28px;
+            font-weight: 400;
+            margin-left: 20px;
+            margin-top:5px;
+            width: 90%;
+            }
+            @media (min-width:768px){
+                align-items: center;
+            }
+            .fa-regular{
+                text-align: right;
+                margin-left:10%;
+                @media (min-width:768px){
+                    width:61%;
+                    margin:0;
+                 }
+                 @media (min-width:992px){
+                    width: 70%;
+                 }
+            }
+    }
+}

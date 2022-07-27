@@ -2,7 +2,7 @@
 <html lang="fr">
     <meta charset ="utf-8">
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="CSS/Styles.css">
+    <link rel="stylesheet" type="text/css" href="Sass/Styles.css">
     <link rel="stylesheet" type="text/css" href="CSS/Normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css" integrity="sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
@@ -22,7 +22,7 @@
             <div class="text-button">
                 <h1>Réservez le menu qui vous convient</h1>
                     <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                        <button type="submit" class="button--purple">Explorer nos restaurants</button>
+                        <button type="button" class="button--purple">Explorer nos restaurants</button>
             </div>
             <section id="function"><!--liste fonctions-->
                 <h2 class="function__title">Fonctionnement</h2>
@@ -44,9 +44,13 @@
             </section>
             <section id="restaurant"><!--liste menus-->
                 <h2 class="restaurant__title">Restaurants</h2>
-                    <div class="restaurant-card__container"><!--menu 1-->
-                        <a href="menu_1_la_palette_du_gout.html">
-                            <img class="restaurant__img" src="images/menu_1.jpg" alt="La palette du goût"/>
+                    <div class ="restaurant-cards">
+                        <div class="restaurant-card__container"><!--menu 1-->
+                            <a href="menu_1_la_palette_du_gout.html">
+                                <div class="new-menu">
+                                    <img class="restaurant__img" src="images/menu_1.jpg" alt="La palette du goût"/>
+                                        <span class="new">Nouveau</span>
+                                </div>
                                 <div class="restaurant__text">
                                     <div class="restaurant__description">
                                         <h3 class="restaurant__title">La palette du goût</h3>
@@ -56,11 +60,14 @@
                                         <i class="fa-regular fa-heart"></i>
                                     </div>
                                 </div>
-                        </a>                
-                    </div>
-                    <div class="restaurant-card__container"><!--menu 2-->
-                        <a href="menu_2_la_note_enchantée.html">
-                            <img class="restaurant__img" src="images/menu_2.jpg" alt="La note enchantée"/>
+                            </a>                
+                        </div>
+                        <div class="restaurant-card__container"><!--menu 2-->
+                            <a href="menu_2_la_note_enchantée.html">
+                                <div class="new-menu">
+                                    <img class="restaurant__img" src="images/menu_2.jpg" alt="La note enchantée"/>
+                                        <span class="new">Nouveau</span>
+                                </div>
                                 <div class="restaurant__text">
                                     <div class="restaurant__description">
                                         <h3 class="restaurant__title">La note enchantée</h3>
@@ -70,36 +77,37 @@
                                         <i class="fa-regular fa-heart"></i>
                                     </div>
                                 </div>
-                        </a>
-                    </div>
-                    <div class="restaurant-card__container"><!--menu 3-->
-                        <a href="menu_3_à_la_française.html">
-                            <img class="restaurant__img" src="images/menu_3.jpg" alt="À la française"/>
-                                <div class="restaurant__text">
-                                    <div class="restaurant__description">
-                                        <h3 class="restaurant__title">À la française</h3>
-                                            <p class="restaurant__location">Cité Rouge</p>
-                                    </div> 
-                                    <div class="restaurant-favorite">
-                                        <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </div>
+                        <div class="restaurant-card__container"><!--menu 3-->
+                            <a href="menu_3_à_la_française.html">
+                                <img class="restaurant__img" src="images/menu_3.jpg" alt="À la française"/>
+                                    <div class="restaurant__text">
+                                        <div class="restaurant__description">
+                                            <h3 class="restaurant__title">À la française</h3>
+                                                <p class="restaurant__location">Cité Rouge</p>
+                                        </div> 
+                                        <div class="restaurant-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
                                     </div>
-                                </div>
-                        </a>
-                    </div>
-                    <div class="restaurant-card__container"><!--menu 4-->
-                        <a href="menu_4_le_délice_des_sens.html">
-                            <img class="restaurant__img" src="images/menu_4.jpg" alt="Le délice des sens"/>
-                                <div class="restaurant__text">
-                                    <div class="restaurant__description">
-                                        <h3 class="restaurant__title">Le délice des sens</h3>
-                                            <p class="restaurant__location">Folie-Méricourt</p>
+                            </a>
+                        </div>
+                        <div class="restaurant-card__container"><!--menu 4-->
+                            <a href="menu_4_le_délice_des_sens.html">
+                                <img class="restaurant__img" src="images/menu_4.jpg" alt="Le délice des sens"/>
+                                    <div class="restaurant__text">
+                                        <div class="restaurant__description">
+                                            <h3 class="restaurant__title">Le délice des sens</h3>
+                                                <p class="restaurant__location">Folie-Méricourt</p>
+                                        </div>
+                                        <div class="restaurant-favorite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
                                     </div>
-                                    <div class="restaurant-favorite">
-                                        <i class="fa-regular fa-heart"></i>
-                                    </div>
-                                </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
+                    </div>    
             </section>
         </main>
         <footer><!--footer-->
