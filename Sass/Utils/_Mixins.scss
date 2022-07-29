@@ -1,3 +1,6 @@
 @mixin border-hover{
     box-shadow: 1px 1px 8px black;
 }
+@mixin light-color{
+    background-image: linear-gradient(to right bottom,$light-color-secondary,$light-color-primary);
+}

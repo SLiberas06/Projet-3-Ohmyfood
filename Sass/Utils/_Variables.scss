@@ -2,6 +2,8 @@
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+$light-color-primary: lighten($color-primary,2%);
+$light-color-secondary:lighten($color-secondary,2%);
 /*extensions*/
 .title-typography
 {

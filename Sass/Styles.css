@@ -32,6 +32,159 @@ body {
   margin: 0;
 }
 
+.heart-white {
+  position: absolute;
+  opacity: 0.9;
+  transform: scale(1);
+  transition: transform 100ms ease-in;
+}
+.heart-white:hover {
+  transform: scale(1);
+}
+
+.heart-color {
+  position: relative;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(to right bottom, #FF79DA, #9356DC);
+  color: transparent;
+  opacity: 0;
+  transform: scale(0.1, 0.9);
+  transition: transform 150ms ease 50ms;
+}
+.heart-color:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+  opacity: 1;
+}
+
+.entrance .card-meal, .dish .card-meal, .dessert .card-meal {
+  transition: transform 500ms ease;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+.entrance .child--1, .dish .child--1, .dessert .child--1 {
+  -webkit-animation: cascadeMenu1 500ms both;
+          animation: cascadeMenu1 500ms both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+.entrance .child--2, .dish .child--2, .dessert .child--2 {
+  -webkit-animation: cascadeMenu2 750ms both;
+          animation: cascadeMenu2 750ms both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+.entrance .child--3, .dish .child--3, .dessert .child--3 {
+  -webkit-animation: cascadeMenu3 1000ms both;
+          animation: cascadeMenu3 1000ms both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+.entrance .child--4, .dish .child--4, .dessert .child--4 {
+  -webkit-animation: cascadeMenu4 1250ms both;
+          animation: cascadeMenu4 1250ms both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes cascadeMenu1 {
+  0% {
+    transform: translateY(30px);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+
+@keyframes cascadeMenu1 {
+  0% {
+    transform: translateY(30px);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+@-webkit-keyframes cascadeMenu2 {
+  0% {
+    transform: translateY(30px);
+    opacity: 25%;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+@keyframes cascadeMenu2 {
+  0% {
+    transform: translateY(30px);
+    opacity: 25%;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+@-webkit-keyframes cascadeMenu3 {
+  0% {
+    transform: translateY(30px);
+    opacity: 50%;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+@keyframes cascadeMenu3 {
+  0% {
+    transform: translateY(30px);
+    opacity: 50%;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+@-webkit-keyframes cascadeMenu4 {
+  0% {
+    transform: translateY(30px);
+    opacity: 75%;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+@keyframes cascadeMenu4 {
+  0% {
+    transform: translateY(30px);
+    opacity: 75%;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+@-webkit-keyframes rotateCheck {
+  0% {
+    transform: rotate(2turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+@keyframes rotateCheck {
+  0% {
+    transform: rotate(2turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
 .border-title__meal, .entrance .meal__title::after, .dish .meal__title::after, .dessert .meal__title::after {
   content: "_";
   border-bottom: solid 3px #99E2D0;
@@ -56,6 +209,7 @@ body {
 }
 .button-omf:hover, .text-button .button--purple:hover, .button--purple__meal:hover {
   box-shadow: 1px 1px 8px black;
+  background-image: linear-gradient(to right bottom, #ff83dd, #985ede);
 }
 .button-omf:active, .text-button .button--purple:active, .button--purple__meal:active {
   box-shadow: inset -1px -2px 10px rgba(255, 255, 255, 0.6), inset 1px 2px 10px rgba(0, 0, 0, 0.6);
@@ -325,8 +479,9 @@ input:focus {
   }
 }
 #restaurant .restaurant-card__container a .restaurant__text .fa-heart {
-  font-size: 25px;
-  margin: 0px 5px 20px;
+  font-size: 30px;
+  margin: 0px 5px 20px 0px;
+  cursor: pointer;
 }
 
 @media (min-width: 992px) {
@@ -419,33 +574,24 @@ header .fa-arrow-left {
   margin-top: -30px;
   background-color: #F6F6F6;
   border-radius: 40px;
+  align-items: baseline;
 }
 #menu-card .menu-card__top .menu-card__title {
   font-size: 28px;
   font-weight: 400;
   margin-left: 20px;
   margin-top: 5px;
-  width: 90%;
+  width: 80%;
 }
-@media (min-width: 768px) {
-  #menu-card .menu-card__top {
-    align-items: center;
-  }
+#menu-card .menu-card__top .favorite-heart {
+  position: relative;
+  width: 40px;
+  cursor: pointer;
+  font-size: 30px;
+  margin: -60px 10px 50px 85%;
 }
-#menu-card .menu-card__top .fa-regular {
-  text-align: right;
-  margin-left: 10%;
-}
-@media (min-width: 768px) {
-  #menu-card .menu-card__top .fa-regular {
-    width: 61%;
-    margin: 0;
-  }
-}
-@media (min-width: 992px) {
-  #menu-card .menu-card__top .fa-regular {
-    width: 70%;
-  }
+#menu-card .menu-card__top .favorite-heart .heart-color {
+  margin-bottom: 4px;
 }
 
 /*entrées-plat-dessert*/
@@ -473,32 +619,78 @@ header .fa-arrow-left {
   border-radius: 15px;
   box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.2);
 }
-.entrance .card-meal .card-meal__name, .dish .card-meal .card-meal__name, .dessert .card-meal .card-meal__name {
+.entrance .card-meal__name, .dish .card-meal__name, .dessert .card-meal__name {
   font-weight: 700;
   font-size: 17px;
   margin-bottom: -10px;
   margin-left: 10px;
   margin-top: 15px;
-  width: 260px;
+  width: 90%;
   height: 20px;
   white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.entrance .card-meal .card-meal__desc, .dish .card-meal .card-meal__desc, .dessert .card-meal .card-meal__desc {
+.entrance .card-meal__overflow-text, .dish .card-meal__overflow-text, .dessert .card-meal__overflow-text {
+  align-items: baseline;
+}
+.entrance .card-meal__desc, .dish .card-meal__desc, .dessert .card-meal__desc {
   margin-left: 10px;
-  width: 80%;
   height: 20px;
+  width: 80%;
   font-size: 14px;
   font-weight: 100;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
-.entrance .card-meal .card-meal__price, .dish .card-meal .card-meal__price, .dessert .card-meal .card-meal__price {
-  margin: -35px 0px 50px 0px;
+.entrance .card-meal__price, .dish .card-meal__price, .dessert .card-meal__price {
+  margin: -35px 25px 50px 20px;
   font-weight: 700;
   font-size: 15px;
-  width: 95%;
   text-align: right;
+  display: block;
+  overflow: hidden;
+}
+.entrance .card-meal__animation, .dish .card-meal__animation, .dessert .card-meal__animation {
+  width: 0%;
+  height: 70px;
+  margin: -105px 0% 0px 83%;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #99E2D0;
+  display: flex;
+  transition: 0.5s;
+}
+.entrance .card-meal__animation .icon, .dish .card-meal__animation .icon, .dessert .card-meal__animation .icon {
+  color: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 25px 0px 25px 20px;
+}
+.entrance .card-meal:hover, .dish .card-meal:hover, .dessert .card-meal:hover {
+  cursor: pointer;
+}
+.entrance .card-meal:hover .card-meal__animation, .dish .card-meal:hover .card-meal__animation, .dessert .card-meal:hover .card-meal__animation {
+  transition: 0.6s;
+  width: 17%;
+}
+.entrance .card-meal:hover .card-meal__animation .icon, .dish .card-meal:hover .card-meal__animation .icon, .dessert .card-meal:hover .card-meal__animation .icon {
+  color: white;
+  -webkit-animation: rotateCheck 0.5s both;
+          animation: rotateCheck 0.5s both;
+  transition: all 1s ease;
+}
+.entrance .card-meal:hover .card-meal__price, .dish .card-meal:hover .card-meal__price, .dessert .card-meal:hover .card-meal__price {
+  margin-right: 25%;
+  transition: 0.5s;
+}
+.entrance .card-meal:hover .card-meal__desc, .dish .card-meal:hover .card-meal__desc, .dessert .card-meal:hover .card-meal__desc {
+  width: 60%;
+  transition: 0.5s;
+}
+.entrance .card-meal:hover .card-meal__name, .dish .card-meal:hover .card-meal__name, .dessert .card-meal:hover .card-meal__name {
+  width: 75%;
+  transition: 0.4s;
 }
 
 @media (min-width: 992px) {

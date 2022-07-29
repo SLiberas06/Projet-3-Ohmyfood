@@ -16,27 +16,27 @@
        margin-top:-30px;
        background-color: #F6F6F6;
        border-radius: 40px;
+       align-items: baseline;
         .menu-card__title{
             @extend .title-typography;
             font-size:28px;
             font-weight: 400;
             margin-left: 20px;
             margin-top:5px;
-            width: 90%;
+            width: 80%;
             }
             @media (min-width:768px){
-                align-items: center;
+               
             }
-            .fa-regular{
-                text-align: right;
-                margin-left:10%;
-                @media (min-width:768px){
-                    width:61%;
-                    margin:0;
-                 }
-                 @media (min-width:992px){
-                    width: 70%;
-                 }
+            .favorite-heart{
+                position: relative;
+                width:40px;
+                cursor:pointer;
+                font-size:30px;
+                margin:-60px 10px 50px 85%;
+               .heart-color{
+                margin-bottom: 4px;
+               }
             }
     }
 }

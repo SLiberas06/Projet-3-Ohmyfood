@@ -81,16 +81,17 @@
                        text-align: left;
                     }
                 }
-            
                 .fa-heart{
-                    font-size:25px;
-                    margin: 0px 5px 20px;
-                    
+                    font-size:30px;
+                    margin: 0px 5px 20px 0px;
+                    cursor: pointer;
                 }
+                
             }     
         }
     }
 }
+
 @media (min-width:992px){
     .restaurant-cards{
         width:1000px;

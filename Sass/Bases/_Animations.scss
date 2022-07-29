@@ -1,0 +1,69 @@
+.heart-white{
+    position: absolute;
+    opacity:0.9;
+    transform: scale(1);
+    transition: transform 100ms ease-in;
+    &:hover{
+        transform: scale(1);
+    }
+}
+.heart-color{
+    position: relative;
+    background-clip:text;
+    background-image: linear-gradient(to right bottom,$color-secondary,$color-primary);
+    color:transparent;
+    opacity:0;
+    transform: scale(0.1,0.9);
+    transition: transform 150ms ease 50ms;
+    &:hover{
+        transform: scale(1.10);
+        transition: 0.2s;
+        opacity: 1;
+    }
+}
+
+.entrance,.dish,.dessert{
+    .card-meal{
+        transition: transform 500ms ease;
+        animation-iteration-count: 1;
+    }
+    .child--1{
+        animation: cascadeMenu1 500ms both;
+        animation-iteration-count: 1;
+    }
+    .child--2{
+        animation: cascadeMenu2 750ms both;
+        animation-iteration-count: 1;
+    }
+    .child--3{
+        animation: cascadeMenu3 1000ms both;
+        animation-iteration-count: 1;
+    }
+    .child--4{
+        animation: cascadeMenu4 1250ms both;
+        animation-iteration-count: 1;
+
+    }
+}
+
+@keyframes  cascadeMenu1 { 
+    0% { transform: translateY(30px); opacity:0%};
+    100% { transform: translateY(0px); opacity:100%}; 
+} 
+@keyframes  cascadeMenu2 { 
+    0% { transform: translateY(30px); opacity:25%};
+    100% { transform: translateY(0px); opacity:100%}; 
+} 
+@keyframes  cascadeMenu3 { 
+    0% { transform: translateY(30px); opacity:50%};
+    100% { transform: translateY(0px); opacity:100%}; 
+} 
+@keyframes  cascadeMenu4 { 
+    0% { transform: translateY(30px); opacity:75%};
+    100% { transform: translateY(0px); opacity:100%}; 
+} 
+
+@keyframes rotateCheck {
+    0% { transform: rotate(2turn);};
+    100%{ transform: rotate(1turn);};
+}
