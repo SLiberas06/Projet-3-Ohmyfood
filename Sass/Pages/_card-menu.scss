@@ -22,15 +22,13 @@
         height: 70px;
         width: 100%;
         border-radius: 15px;
-        box-shadow: 2px 2px 10px rgba(128,128,128,0.2);   
-        
-       
+        box-shadow: 2px 2px 10px rgba(128,128,128,0.2);  
         &__name{
             font-weight: 700;
             font-size: 17px;
             margin-bottom:-10px;
             margin-left:10px;
-            margin-top: 15px;
+            padding-bottom: 20px;
             width: 90%;
             height: 20px;
             white-space: nowrap;
@@ -61,29 +59,28 @@
         &__animation{
             width: 0%;
             height:70px;
-            margin: -105px 0% 0px 83%;
+            margin: -107px 0% 0px 83%;
             border-radius: 0px 15px 15px 0px;
             background-color: $color-tertiary;
             display: flex;
             transition: 0.5s;
+            float:right;
             .icon{
                 color:transparent;
-                font-size:20px;
+                font-size:22px;
                 font-weight: bold;
-                padding:25px 0px 25px 20px;
-                
-               
+                padding:25px;
             }
         }
         &:hover{
             cursor: pointer;
             .card-meal__animation{
-                transition: 0.6s;
+                transition: 0.7s;
                 width: 17%;
+                position: relative;
                 .icon{
                     color: white;
-                    animation: rotateCheck 0.5s both;
-                    transition: all 1s ease;
+                    animation: rotateCheck 0.5s linear;
                 } 
             }
             .card-meal__price{
@@ -93,6 +90,7 @@
             .card-meal__desc{
                 width:60%;
                 transition: 0.5s;
+                
             }
             .card-meal__name{
                 width: 75%;

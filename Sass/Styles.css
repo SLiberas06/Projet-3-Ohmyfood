@@ -32,6 +32,80 @@ body {
   margin: 0;
 }
 
+.loader {
+  position: fixed;
+  height: 100vh;
+  width: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.9;
+  transition: 0.2s ease-in-out;
+  -webkit-animation: bg-load 4s;
+          animation: bg-load 4s;
+}
+.loader .letter {
+  font-size: 50px;
+  font-family: "Shrikhand", cursive;
+  color: transparent;
+  align-items: flex-start;
+  justify-content: center;
+  -webkit-animation: loading 3s ease-out;
+          animation: loading 3s ease-out;
+  transition: color 0.2s ease-out;
+}
+@media (min-width: 768px) {
+  .loader .letter {
+    font-size: 80px;
+  }
+}
+.loader .letter:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+.loader .letter:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.loader .letter:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.loader .letter:nth-child(4) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.loader .letter:nth-child(5) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.loader .letter:nth-child(6) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.loader .letter:nth-child(7) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+.loader .letter:nth-child(8) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+.loader .letter:nth-child(9) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+.loader .letter:nth-child(10) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.loader .letter:nth-child(11) {
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 1.1s;
+}
+
 .heart-white {
   position: absolute;
   opacity: 0.9;
@@ -171,18 +245,74 @@ body {
 }
 @-webkit-keyframes rotateCheck {
   0% {
-    transform: rotate(2turn);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(1turn);
+    transform: rotate(359deg);
   }
 }
 @keyframes rotateCheck {
   0% {
-    transform: rotate(2turn);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(1turn);
+    transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes loading {
+  0% {
+    color: #9356DC;
+    text-shadow: 0 0 8px #9356DC;
+    font-size: 50px;
+  }
+  50% {
+    color: #FF79DA;
+    text-shadow: none;
+  }
+  90% {
+    color: #99E2D0;
+    text-shadow: 0 0 8px #9356DC;
+  }
+  100% {
+    font-size: 50px;
+  }
+}
+@keyframes loading {
+  0% {
+    color: #9356DC;
+    text-shadow: 0 0 8px #9356DC;
+    font-size: 50px;
+  }
+  50% {
+    color: #FF79DA;
+    text-shadow: none;
+  }
+  90% {
+    color: #99E2D0;
+    text-shadow: 0 0 8px #9356DC;
+  }
+  100% {
+    font-size: 50px;
+  }
+}
+@-webkit-keyframes bg-load {
+  0% {
+    background-color: black;
+    width: 100%;
+  }
+  100% {
+    background-color: black;
+    width: 100%;
+  }
+}
+@keyframes bg-load {
+  0% {
+    background-color: black;
+    width: 100%;
+  }
+  100% {
+    background-color: black;
+    width: 100%;
   }
 }
 .border-title__meal, .entrance .meal__title::after, .dish .meal__title::after, .dessert .meal__title::after {
@@ -404,6 +534,11 @@ input:focus {
   box-shadow: 1px 1px 10px grey;
   background-color: white;
 }
+#restaurant .restaurant-card__container:hover {
+  margin: 10px 5px 10px 5px;
+  transition: 0.3s;
+  box-shadow: 3px 3px 12px grey;
+}
 @media (min-width: 768px) {
   #restaurant .restaurant-card__container {
     width: 70%;
@@ -535,6 +670,19 @@ footer ul li .fa-solid {
   font-size: 13px;
   margin-right: 8px;
 }
+footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+footer ul li a:hover {
+  color: #9356DC;
+}
+footer ul li:hover {
+  font-size: 16px;
+  color: #9356DC;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
 /*menu */
 header {
@@ -624,7 +772,7 @@ header .fa-arrow-left {
   font-size: 17px;
   margin-bottom: -10px;
   margin-left: 10px;
-  margin-top: 15px;
+  padding-bottom: 20px;
   width: 90%;
   height: 20px;
   white-space: nowrap;
@@ -655,30 +803,31 @@ header .fa-arrow-left {
 .entrance .card-meal__animation, .dish .card-meal__animation, .dessert .card-meal__animation {
   width: 0%;
   height: 70px;
-  margin: -105px 0% 0px 83%;
+  margin: -107px 0% 0px 83%;
   border-radius: 0px 15px 15px 0px;
   background-color: #99E2D0;
   display: flex;
   transition: 0.5s;
+  float: right;
 }
 .entrance .card-meal__animation .icon, .dish .card-meal__animation .icon, .dessert .card-meal__animation .icon {
   color: transparent;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
-  padding: 25px 0px 25px 20px;
+  padding: 25px;
 }
 .entrance .card-meal:hover, .dish .card-meal:hover, .dessert .card-meal:hover {
   cursor: pointer;
 }
 .entrance .card-meal:hover .card-meal__animation, .dish .card-meal:hover .card-meal__animation, .dessert .card-meal:hover .card-meal__animation {
-  transition: 0.6s;
+  transition: 0.7s;
   width: 17%;
+  position: relative;
 }
 .entrance .card-meal:hover .card-meal__animation .icon, .dish .card-meal:hover .card-meal__animation .icon, .dessert .card-meal:hover .card-meal__animation .icon {
   color: white;
-  -webkit-animation: rotateCheck 0.5s both;
-          animation: rotateCheck 0.5s both;
-  transition: all 1s ease;
+  -webkit-animation: rotateCheck 0.5s linear;
+          animation: rotateCheck 0.5s linear;
 }
 .entrance .card-meal:hover .card-meal__price, .dish .card-meal:hover .card-meal__price, .dessert .card-meal:hover .card-meal__price {
   margin-right: 25%;

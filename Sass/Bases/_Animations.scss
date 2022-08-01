@@ -64,6 +64,37 @@
 } 
 
 @keyframes rotateCheck {
-    0% { transform: rotate(2turn);};
-    100%{ transform: rotate(1turn);};
+    0% { transform: rotate(0deg);};
+    100%{ transform: rotate(359deg);};
+}
+@keyframes loading{
+    
+    0%{
+        color:$color-primary;
+        text-shadow:0 0 8px $color-primary;
+        font-size: 50px;
+    }
+    50%{
+        color:$color-secondary;
+        text-shadow: none;
+    }
+    90%{
+        color:$color-tertiary;
+        text-shadow:0 0 8px $color-primary;
+    }
+    100%{
+        font-size: 50px;
+    }
+}
+@keyframes bg-load{
+    0%{
+        
+        background-color: black;
+        width:100%;
+    }
+    100%{
+        background-color: black;
+        width:100%;
+        
+    }
 }
