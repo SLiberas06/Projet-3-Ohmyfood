@@ -4,3 +4,8 @@
 @mixin light-color{
     background-image: linear-gradient(to right bottom,$light-color-secondary,$light-color-primary);
 }
+
+@mixin background-load{
+    background-color: black;
+        width:100%;
+}

@@ -1,0 +1,13 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Dynamisez une page web avec des animations CSS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass ./sass/main.scss:./Users/jmrom/Desktop/Sabrina/Openclassrooms/Projet_3_Sabrina_Liberas_072022/Sass/Styles.css -w --style compressed",
+    "prefix": "postcss ./Users/jmrom/Desktop/Sabrina/Openclassrooms/Projet_3_Sabrina_Liberas_072022/Sass/Styles.css --use autoprefixer -d./Users/jmrom/Desktop/Sabrina/Openclassrooms/Projet_3_Sabrina_Liberas_072022/Sass/Style.css/prefixed/"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+}
