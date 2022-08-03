@@ -1,12 +1,15 @@
+
 .heart-white{
     position: absolute;
     opacity:0.9;
     transform: scale(1);
     transition: transform 100ms ease-in;
+    margin-top: 1px;
     &:hover{
         transform: scale(1);
     }
 }
+
 .heart-color{
     position: relative;
     background-clip:text;
@@ -16,10 +19,11 @@
     transform: scale(0.1,0.9);
     transition: transform 150ms ease 50ms;
     &:hover{
-        transform: scale(1.10);
+        transform: scale(1);
         transition: 0.2s;
         opacity: 1;
     }
+    
 }
 
 .entrance,.dish,.dessert{

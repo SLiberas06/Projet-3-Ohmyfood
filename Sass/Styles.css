@@ -178,6 +178,7 @@ body {
   opacity: 0.9;
   transform: scale(1);
   transition: transform 100ms ease-in;
+  margin-top: 1px;
 }
 .heart-white:hover {
   transform: scale(1);
@@ -194,7 +195,7 @@ body {
   transition: transform 150ms ease 50ms;
 }
 .heart-color:hover {
-  transform: scale(1.1);
+  transform: scale(1);
   transition: 0.2s;
   opacity: 1;
 }
@@ -800,13 +801,26 @@ header .fa-arrow-left {
 }
 #menu-card .menu-card__top .favorite-heart {
   position: relative;
-  width: 40px;
+  width: 35px;
   cursor: pointer;
   font-size: 30px;
   margin: -60px 10px 50px 85%;
+  padding: 4px;
+}
+#menu-card .menu-card__top .favorite-heart:enabled {
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(to right bottom, #FF79DA, #9356DC);
+  color: transparent;
+  opacity: 1;
+}
+#menu-card .menu-card__top .favorite-heart:disabled {
+  opacity: 0;
 }
 #menu-card .menu-card__top .favorite-heart .heart-color {
   margin-bottom: 4px;
+  width: 35px;
+  pointer-events: auto;
 }
 
 /*entrées-plat-dessert*/
@@ -870,7 +884,7 @@ header .fa-arrow-left {
 .entrance .card-meal__animation, .dish .card-meal__animation, .dessert .card-meal__animation {
   width: 0%;
   height: 70px;
-  margin: -107px 0% 0px 83%;
+  margin: -107.1px 0% 0px 83%;
   border-radius: 0px 15px 15px 0px;
   background-color: #99E2D0;
   display: flex;

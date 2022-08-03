@@ -24,19 +24,29 @@
             margin-left: 20px;
             margin-top:5px;
             width: 80%;
+        }
+        .favorite-heart{
+            position: relative;
+            width:35px;
+            cursor:pointer;
+            font-size:30px;
+            margin:-60px 10px 50px 85%;
+            padding:4px;
+            &:enabled{
+                background-clip:text;
+                background-image: linear-gradient(to right bottom,$color-secondary,$color-primary);
+                color:transparent;
+                opacity: 1;
             }
-            @media (min-width:768px){
+            &:disabled{
+                opacity: 0;
+            }
+            .heart-color{
+                margin-bottom: 4px;
+                width:35px;
+                pointer-events:auto;
                
             }
-            .favorite-heart{
-                position: relative;
-                width:40px;
-                cursor:pointer;
-                font-size:30px;
-                margin:-60px 10px 50px 85%;
-               .heart-color{
-                margin-bottom: 4px;
-               }
-            }
+        }       
     }
 }
