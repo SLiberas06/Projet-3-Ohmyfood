@@ -23,7 +23,6 @@
             font-weight: 400;
             margin-left: 20px;
             margin-top:5px;
-<<<<<<< HEAD
             width: 80%;
         }
         .favorite-heart{
@@ -33,6 +32,15 @@
             font-size:30px;
             margin:-60px 10px 50px 85%;
             padding:4px;
+            &:enabled{
+                background-clip:text;
+                background-image: linear-gradient(to right bottom,$color-secondary,$color-primary);
+                color:transparent;
+                opacity: 1;
+            }
+            &:disabled{
+                opacity: 0;
+            }
             .heart-color{
                 margin-bottom: 4px;
                 width:35px;
