@@ -884,7 +884,7 @@ header .fa-arrow-left {
 .entrance .card-meal__animation, .dish .card-meal__animation, .dessert .card-meal__animation {
   width: 0%;
   height: 70px;
-  margin: -107.7px 0% 0px 83%;
+  margin: -107px 0% 0px 83%;
   border-radius: 0px 15px 15px 0px;
   background-color: #99E2D0;
   display: flex;
