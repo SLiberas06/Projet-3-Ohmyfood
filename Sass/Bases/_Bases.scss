@@ -42,7 +42,7 @@ body
 /*boucle chargement*/
 @for $i from 1 through 11 {
     .letter:nth-child(11n + #{$i}) {
-      animation-delay: 0s + $i * 0.1s;
+      animation-delay: 0.1s + $i * 0.1s;
     }
   }
 

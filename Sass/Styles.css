@@ -21,61 +21,6 @@ input:-ms-input-placeholder {
   color: black;
 }
 
-.letter:nth-child(11n+1) {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
-}
-
-.letter:nth-child(11n+2) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-
-.letter:nth-child(11n+3) {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-}
-
-.letter:nth-child(11n+4) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-
-.letter:nth-child(11n+5) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-
-.letter:nth-child(11n+6) {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-
-.letter:nth-child(11n+7) {
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
-}
-
-.letter:nth-child(11n+8) {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
-}
-
-.letter:nth-child(11n+9) {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
-}
-
-.letter:nth-child(11n+10) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-.letter:nth-child(11n+11) {
-  -webkit-animation-delay: 1.1s;
-          animation-delay: 1.1s;
-}
-
 /*body*/
 * {
   box-sizing: border-box;
@@ -119,58 +64,58 @@ body {
 
 /*boucle chargement*/
 .letter:nth-child(11n+1) {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
-}
-
-.letter:nth-child(11n+2) {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
 
-.letter:nth-child(11n+3) {
+.letter:nth-child(11n+2) {
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
 
-.letter:nth-child(11n+4) {
+.letter:nth-child(11n+3) {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
 
-.letter:nth-child(11n+5) {
+.letter:nth-child(11n+4) {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
 
-.letter:nth-child(11n+6) {
+.letter:nth-child(11n+5) {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
 
-.letter:nth-child(11n+7) {
+.letter:nth-child(11n+6) {
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;
 }
 
-.letter:nth-child(11n+8) {
+.letter:nth-child(11n+7) {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }
 
-.letter:nth-child(11n+9) {
+.letter:nth-child(11n+8) {
   -webkit-animation-delay: 0.9s;
           animation-delay: 0.9s;
 }
 
-.letter:nth-child(11n+10) {
+.letter:nth-child(11n+9) {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 
-.letter:nth-child(11n+11) {
+.letter:nth-child(11n+10) {
   -webkit-animation-delay: 1.1s;
           animation-delay: 1.1s;
+}
+
+.letter:nth-child(11n+11) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
 }
 
 .heart-white {
