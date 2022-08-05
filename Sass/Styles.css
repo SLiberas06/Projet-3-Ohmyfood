@@ -195,7 +195,7 @@ body {
   transition: transform 150ms ease 50ms;
 }
 .heart-color:hover {
-  transform: scale(1);
+  transform: scale(1.1);
   transition: 0.2s;
   opacity: 1;
 }
@@ -762,7 +762,7 @@ header {
 header a {
   color: black;
   margin-left: 20px;
-  margin-right: -20px;
+  margin-right: -30px;
 }
 header .fa-arrow-left {
   font-size: 20px;
@@ -883,8 +883,8 @@ header .fa-arrow-left {
 }
 .entrance .card-meal__animation, .dish .card-meal__animation, .dessert .card-meal__animation {
   width: 0%;
-  height: 70px;
-  margin: -107px 0% 0px 83%;
+  height: 71px;
+  margin: -108px 0% 0px 83%;
   border-radius: 0px 15px 15px 0px;
   background-color: #99E2D0;
   display: flex;

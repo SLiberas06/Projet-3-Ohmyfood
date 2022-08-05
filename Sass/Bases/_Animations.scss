@@ -7,8 +7,7 @@
     margin-top: 1px;
     &:hover{
         transform: scale(1);
-    }
-}
+}}
 
 .heart-color{
     position: relative;
@@ -19,7 +18,7 @@
     transform: scale(0.1,0.9);
     transition: transform 150ms ease 50ms;
     &:hover{
-        transform: scale(1);
+        transform: scale(1.10);
         transition: 0.2s;
         opacity: 1;
     }
