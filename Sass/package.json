@@ -2,10 +2,10 @@
   "name": "ohmyfood",
   "version": "1.0.0",
   "description": "Dynamisez une page web avec des animations CSS",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "sass": "sass ./sass/main.scss:./Projet_3_Sabrina_Liberas_072022/Sass/Styles.css -w --style compressed",
-    "prefix": "postcss ./Projet_3_Sabrina_Liberas_072022/Sass/Styles.css --use autoprefixer -d./Projet_3_Sabrina_Liberas_072022/Sass/prefixed/"
+    "sass": "sass ./sass/main.scss:./Projet-3-Ohmyfood/Sass/Styles.css -w --style compressed",
+    "prefix": "postcss ./Projet-3-Ohmyfood/Sass/Styles.css --use autoprefixer -d./Projet-3-Ohmyfood/Sass/prefixed/"
   },
   "author": "",
   "license": "ISC",
